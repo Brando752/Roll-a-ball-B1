@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     Rigidbody rb;
 
     Vector3 offset;
 
-    public Camera cam; 
-    
+    public Camera cam;
+
+
     public float moveSpeed = 1000f;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
         rb = this.GetComponent<Rigidbody>();
 
-        offset = cam.transform.position - transform.position; 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        offset = cam.transform.position - transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         cam.transform.position = transform.position + offset;
 
         rb.AddForce(Vector3.forward);
@@ -34,7 +38,17 @@ public class PlayerController : MonoBehaviour {
 
         rb.AddForce(forceVector);
 
-        
+
+
+
 
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Collectible")
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
+    
