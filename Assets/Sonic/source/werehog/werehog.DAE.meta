@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: bb6161062703b5d42a91d4c28c90cb3d
-timeCreated: 1548535225
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Camera01
     100002: Camera01_Target
@@ -18,28 +16,85 @@ ModelImporter:
     4300000: EvilRoot
     7400000: Take 001
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_body
+    second: {fileID: 2100000, guid: f9c852d213cfe1c4db5463b12c2d1ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_cloth
+    second: {fileID: 2100000, guid: e80566b2360aec9468f7c9c42632df4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_ground
+    second: {fileID: 2100000, guid: 4d55ed836256ea2429f6b484c7f82a6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_metal
+    second: {fileID: 2100000, guid: e80566b2360aec9468f7c9c42632df4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_nail
+    second: {fileID: 2100000, guid: f9c852d213cfe1c4db5463b12c2d1ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_nose
+    second: {fileID: 2100000, guid: f9c852d213cfe1c4db5463b12c2d1ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_sred
+    second: {fileID: 2100000, guid: e80566b2360aec9468f7c9c42632df4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_teeth
+    second: {fileID: 2100000, guid: f9c852d213cfe1c4db5463b12c2d1ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_whiteL
+    second: {fileID: 2100000, guid: 3bd0829edbf645a4b8d999a4bd42cf7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evil_whiteR
+    second: {fileID: 2100000, guid: 3bd0829edbf645a4b8d999a4bd42cf7f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -47,22 +102,34 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -74,20 +141,20 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: EvilRoot
+      parentName: werehog(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
     - name: Camera01
       parentName: werehog(Clone)
-      position: {x: 1.321473, y: 0.736609, z: 1.887988}
+      position: {x: 1.3214729, y: 0.7366089, z: 1.887988}
       rotation: {x: -0.008419061, y: 0.26301995, z: 0.0022952878, w: 0.96475095}
       scale: {x: 1, y: 1, z: 1}
     - name: Camera01_Target
       parentName: werehog(Clone)
       position: {x: 0.350395, y: 0.703213, z: 0.239415}
       rotation: {x: -0.008419057, y: 0.26302, z: 0.0022953323, w: 0.96475095}
-      scale: {x: 1, y: 1, z: 1}
-    - name: EvilRoot
-      parentName: werehog(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
@@ -97,7 +164,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
